@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novos Caminhos | Valorizando a sua maturidade profissional</title>
+
+    <!-- Fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <!-- Folha de Estilos Externa -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- BARRA DE ACESSIBILIDADE E APOIO HUMANO -->
+    <div class="top-accessibility-bar" role="region" aria-label="Ferramentas de acessibilidade">
+        <div class="accessibility-tools">
+            <span>Acessibilidade:</span>
+            <button class="tool-btn" onclick="adjustFontSize(1)" aria-label="Aumentar tamanho do texto">A+ Aumentar
+                fonte</button>
+            <button class="tool-btn" onclick="adjustFontSize(-1)" aria-label="Diminuir tamanho do texto">A- Diminuir
+                fonte</button>
+            <button class="tool-btn" onclick="toggleContrast()" aria-label="Alternar modo de alto contraste">◐ Alto
+                Contraste</button>
+        </div>
+        <div class="support-badge">
+            <span>💬 Dúvidas?</span> Central de Ajuda por WhatsApp disponível
+        </div>
+    </div>
+
+    <!-- CABEÇALHO DA PLATAFORMA -->
+    <header class="main-header">
+        <div class="header-container">
+            <a class="brand-logo" onclick="navigateTo('view-inicio')">
+                <div class="logo-badge" aria-hidden="true">NC</div>
+                <div class="logo-texts">
+                    <h1>NOVOS CAMINHOS</h1>
+                    <p>Experiência & Futuro 40+</p>
+                </div>
+            </a>
+
+            <!-- Menu Principal -->
+            <nav class="nav-menu" id="mainNav" aria-label="Navegação Principal">
+                <ul>
+                    <li><button class="nav-btn active" data-target="view-inicio" onclick="navigateTo('view-inicio')">🏠
+                            Início</button></li>
+                    <li><button class="nav-btn" data-target="view-jornada" onclick="navigateTo('view-jornada')">🧭 Minha
+                            jornada</button></li>
+                    <li><button class="nav-btn" data-target="view-cursos" onclick="navigateTo('view-cursos')">📚 Cursos
+                            gratuitos</button></li>
+                    <li><button class="nav-btn" data-target="view-mentorias" onclick="navigateTo('view-mentorias')">🤝
+                            Mentorias & Vagas</button></li>
+                    <li><button class="nav-btn" data-target="view-perfil" onclick="navigateTo('view-perfil')">👤 Meu
+                            perfil</button></li>
+                </ul>
+            </nav>
+
+            <!-- Ações de Login / Cadastro -->
+            <div class="user-actions">
+                <button class="btn btn-outline" id="btnLoginHeader" onclick="openModal('modalLogin')">Entrar</button>
+                <button class="btn btn-primary" id="btnRegisterHeader"
+                    onclick="openModal('modalCadastro')">Cadastre-se</button>
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()"
+                    aria-label="Abrir menu de navegação">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL (SPA) -->
+    <main>
+        <!-- SEÇÃO 1: INÍCIO -->
+        <section id="view-inicio" class="view-section active-view">
+            <div class="hero-banner">
+                <div class="hero-left">
+                    <div class="hero-tag">
+                        <span></span> Combate ativo ao etarismo profissional
+                    </div>
+                    <h2 class="hero-title">Sua experiência abre <span class="highlight">novos caminhos</span>.</h2>
+                    <p class="hero-text">
+                        A maturidade não é um ponto final, é a sua maior vantagem competitiva.
+                        Oferecemos capacitação prática, mentorias humanizadas e conexão direta com empresas
+                        comprometidas com a inclusão de profissionais acima de 40 anos.
+                    </p>
+                    <div class="hero-cta-group">
+                        <button class="btn btn-primary" onclick="openModal('modalCadastro')">Quero começar agora (100%
+                            Gratuito)</button>
+                        <button class="btn btn-outline" onclick="navigateTo('view-cursos')">Ver catálogo de
+                            cursos</button>
+                    </div>
+                </div>
+
+                <div class="hero-card-preview">
+                    <div class="badge-float">Comunidade Ativa</div>
+                    <h3 style="color: var(--primary); margin-bottom: 10px; font-size: 1.3rem;">Espaço Seguro & Acolhedor
+                    </h3>
+                    <p style="color: var(--text-muted); font-size: 1.05rem; margin-bottom: 18px;">
+                        Aqui você não precisa ter medo da tecnologia. Todas as nossas trilhas foram criadas com
+                        metodologia passo a passo, ritmo respeitoso e apoio em tempo real.
+                    </p>
+                    <div
+                        style="background: var(--lilac-bg); padding: 14px; border-radius: var(--radius-sm); border-left: 4px solid var(--secondary);">
+                        <strong style="color: var(--primary); display:block;">"Aos 53 anos, conquistei minha recolocação
+                            com as mentorias do projeto."</strong>
+                        <span style="font-size: 0.9rem; color: var(--text-muted);">— Marta Silveira, Analista de
+                            Operações</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-header">
+                <span class="section-tag">Nossos Pilares</span>
+                <h3 class="section-title">Feito sob medida para quem já viveu a prática</h3>
+                <p class="section-desc">Eliminamos barreiras para que você atualize seus conhecimentos e conquiste
+                    oportunidades com confiança e dignidade.</p>
+            </div>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon" aria-hidden="true">💡</div>
+                    <h3>Educação Acolhedora</h3>
+                    <p>Cursos de letramento digital, ferramentas modernas e liderança sem jargões complicados. Aprenda
+                        no seu próprio ritmo.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon" aria-hidden="true">🤝</div>
+                    <h3>Mentorias Individuais</h3>
+                    <p>Converse diretamente com mentores seniores que entendem o mercado de trabalho e ajudam a
+                        reestruturar sua carreira.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon" aria-hidden="true">🏢</div>
+                    <h3>Empresas Pró-Maturidade</h3>
+                    <p>Acesso a processos seletivos em empresas que valorizam estabilidade emocional, capacidade
+                        analítica e bagagem de vida.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon" aria-hidden="true">📑</div>
+                    <h3>Currículo Estratégico</h3>
+                    <p>Aprenda a destacar o valor real dos seus anos de carreira sem deixar que o algoritmo descarte o
+                        seu perfil.</p>
+                </div>
+            </div>
+
+            <div class="company-banner">
+                <div>
+                    <h3>Sua empresa valoriza a diversidade geracional?</h3>
+                    <p>Junte-se ao movimento NOVOS CAMINHOS. Ajude-nos a combater o etarismo, forme equipes
+                        multidisciplinares mais resilientes e anuncie vagas inclusivas.</p>
+                </div>
+                <button class="btn"
+                    onclick="alert('Obrigado pelo interesse! Nossa equipe de parcerias entrará em contato em breve através do e-mail corporativo.')">Seja
+                    uma Empresa Parceira</button>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 2: MINHA JORNADA -->
+        <section id="view-jornada" class="view-section">
+            <div class="user-welcome-card">
+                <div class="user-welcome-info">
+                    <span class="section-tag">Painel Pessoal</span>
+                    <h2>Olá, Marta Silveira! 👋</h2>
+                    <p>Objetivo ativo: <strong>Transição de Carreira para Gestão de Projetos & Inovação</strong></p>
+                </div>
+                <div class="metric-badges">
+                    <div class="metric-pill"><strong>2</strong><span>Em andamento</span></div>
+                    <div class="metric-pill"><strong>3</strong><span>Concluídos</span></div>
+                    <div class="metric-pill"><strong>1</strong><span>Mentoria ativa</span></div>
+                </div>
+            </div>
+
+            <div class="dashboard-grid">
+                <div>
+                    <div class="dash-box">
+                        <h3>📖 Cursos em Andamento</h3>
+                        <div class="progress-item">
+                            <div class="progress-header">
+                                <span>Letramento Digital e Ferramentas em Nuvem</span>
+                                <span style="color: var(--primary);">75%</span>
+                            </div>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar-fill" style="width: 75%;"></div>
+                            </div>
+                            <div
+                                style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px;">
+                                <small style="color: var(--text-muted);">Próxima aula: Organizar pastas no Google
+                                    Drive</small>
+                                <button class="btn btn-outline"
+                                    style="min-height: 40px; padding: 6px 16px; font-size: 0.9rem;"
+                                    onclick="showToast('Abrindo ambiente virtual...')">Continuar aula</button>
+                            </div>
+                        </div>
+
+                        <div class="progress-item">
+                            <div class="progress-header">
+                                <span>Liderança Intergeracional & Gestão Humanizada</span>
+                                <span style="color: var(--primary);">40%</span>
+                            </div>
+                            <div class="progress-bar-container">
+                                <div class="progress-bar-fill" style="width: 40%;"></div>
+                            </div>
+                            <div
+                                style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px;">
+                                <small style="color: var(--text-muted);">Próxima aula: Construindo pontes entre
+                                    gerações</small>
+                                <button class="btn btn-outline"
+                                    style="min-height: 40px; padding: 6px 16px; font-size: 0.9rem;"
+                                    onclick="showToast('Abrindo ambiente virtual...')">Continuar aula</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dash-box">
+                        <h3>✨ Suas Competências Identificadas</h3>
+                        <p style="color: var(--text-muted); font-size: 1rem; margin-bottom: 12px;">Habilidades validadas
+                            a partir do seu histórico:</p>
+                        <div class="skill-chips">
+                            <span class="skill-chip">✔ Resolução de Conflitos</span>
+                            <span class="skill-chip">✔ Comunicação Empática</span>
+                            <span class="skill-chip">✔ Gestão de Pessoas</span>
+                            <span class="skill-chip">✔ Resiliência Operacional</span>
+                            <span class="skill-chip">✔ Inteligência Emocional</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="dash-box">
+                        <h3>📅 Próxima Mentoria</h3>
+                        <div
+                            style="background: var(--lilac-bg); padding: 18px; border-radius: var(--radius-sm); border: 1px solid var(--lilac-border);">
+                            <strong style="color: var(--primary); font-size: 1.15rem; display:block;">Quinta-feira, às
+                                15:00</strong>
+                            <p style="color: var(--text-muted); margin: 6px 0;">Com: <strong>Carlos Eduardo
+                                    Vasconcelos</strong></p>
+                            <button class="btn btn-primary"
+                                style="width: 100%; min-height: 44px; font-size: 0.95rem; margin-top: 14px;"
+                                onclick="showToast('Link copiado!')">Acessar Sala Virtual</button>
+                        </div>
+                    </div>
+
+                    <div class="dash-box">
+                        <h3>🎯 Recomendações para você</h3>
+                        <div class="recommendation-card">
+                            <strong style="color: var(--primary);">Vaga com alta afinidade</strong>
+                            <p style="font-size: 0.95rem; margin-top: 4px;">Analista de Projetos Sênior na Empresa Alpha
+                                (Remoto).</p>
+                            <button class="btn btn-outline"
+                                style="min-height: 38px; padding: 4px 12px; font-size: 0.85rem; margin-top: 8px;"
+                                onclick="navigateTo('view-mentorias')">Ver detalhes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 3: CURSOS GRATUITOS -->
+        <section id="view-cursos" class="view-section">
+            <div class="section-header">
+                <span class="section-tag">Capacitação Contínua</span>
+                <h3 class="section-title">Cursos práticos pensados para sua realidade</h3>
+                <p class="section-desc">Linguagem clara, materiais com letras grandes para impressão e suporte diário
+                    via WhatsApp.</p>
+            </div>
+
+            <div class="filter-bar">
+                <button class="filter-btn active" onclick="filterCourses('todos', this)">Todos os cursos</button>
+                <button class="filter-btn" onclick="filterCourses('digital', this)">Tecnologia & Ferramentas</button>
+                <button class="filter-btn" onclick="filterCourses('lideranca', this)">Gestão & Liderança</button>
+                <button class="filter-btn" onclick="filterCourses('carreira', this)">Planejamento & Currículo</button>
+            </div>
+
+            <div class="courses-grid" id="coursesContainer">
+                <article class="course-card" data-category="digital">
+                    <div class="course-thumbnail">💻<span class="course-badge-level">Iniciante Amigável</span></div>
+                    <div class="course-content">
+                        <h4>Inteligência Artificial Prática para o Dia a Dia</h4>
+                        <p>Utilize o ChatGPT e outras ferramentas para acelerar redação de e-mails, relatórios e
+                            organização pessoal.</p>
+                        <div class="course-footer">
+                            <span class="course-meta">⏱️ 12 horas • Certificado</span>
+                            <button class="btn btn-primary" style="padding: 8px 16px; font-size: 0.95rem;"
+                                onclick="enrollCourse('Inteligência Artificial Prática')">Inscrever-se</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="course-card" data-category="lideranca">
+                    <div class="course-thumbnail">👥<span class="course-badge-level">Intermediário</span></div>
+                    <div class="course-content">
+                        <h4>Liderança Intergeracional</h4>
+                        <p>Como liderar e colaborar produtivamente com profissionais das gerações Z e Y.</p>
+                        <div class="course-footer">
+                            <span class="course-meta">⏱️ 20 horas • Certificado</span>
+                            <button class="btn btn-primary" style="padding: 8px 16px; font-size: 0.95rem;"
+                                onclick="enrollCourse('Liderança Intergeracional')">Inscrever-se</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="course-card" data-category="digital">
+                    <div class="course-thumbnail">📊<span class="course-badge-level">Do Zero ao Prático</span></div>
+                    <div class="course-content">
+                        <h4>Excel e Análise de Dados Sem Mistério</h4>
+                        <p>Planilhas organizadas, fórmulas essenciais e gráficos explicativos com calma e exemplos
+                            reais.</p>
+                        <div class="course-footer">
+                            <span class="course-meta">⏱️ 16 horas • Certificado</span>
+                            <button class="btn btn-primary" style="padding: 8px 16px; font-size: 0.95rem;"
+                                onclick="enrollCourse('Excel e Análise de Dados')">Inscrever-se</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="course-card" data-category="carreira">
+                    <div class="course-thumbnail">✨<span class="course-badge-level">Essencial 40+</span></div>
+                    <div class="course-content">
+                        <h4>LinkedIn Estratégico & Marca Pessoal</h4>
+                        <p>Construa presença digital de prestígio e seja encontrado por recrutadores.</p>
+                        <div class="course-footer">
+                            <span class="course-meta">⏱️ 10 horas • Certificado</span>
+                            <button class="btn btn-primary" style="padding: 8px 16px; font-size: 0.95rem;"
+                                onclick="enrollCourse('LinkedIn Estratégico')">Inscrever-se</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 4: MENTORIAS E VAGAS -->
+        <section id="view-mentorias" class="view-section">
+            <div class="section-header">
+                <span class="section-tag">Conexão Humana & Trabalho</span>
+                <h3 class="section-title">Mentorias dedicadas e vagas inclusivas</h3>
+                <p class="section-desc">Converse com quem entende seus desafios e encontre empresas parceiras.</p>
+            </div>
+
+            <div class="tab-switch">
+                <button class="tab-btn active" id="tabMentoresBtn" onclick="switchOpportunitiesTab('mentores')">👥
+                    Mentores Voluntários</button>
+                <button class="tab-btn" id="tabVagasBtn" onclick="switchOpportunitiesTab('vagas')">💼 Oportunidades de
+                    Emprego</button>
+            </div>
+
+            <div id="mentoresContent" class="mentors-grid">
+                <div class="mentor-card">
+                    <div class="mentor-profile">
+                        <div class="mentor-avatar">CV</div>
+                        <div class="mentor-details">
+                            <h4>Carlos Eduardo Vasconcelos</h4>
+                            <span>Diretor de RH & Mentor (58 anos)</span>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-muted); font-size: 0.98rem;">"Te ajudo a reposicionar seu currículo e a
+                        dominar entrevistas sem nervosismo."</p>
+                    <div
+                        style="background: var(--lilac-bg); padding: 10px; border-radius: var(--radius-sm); font-size: 0.9rem;">
+                        Disponibilidade: <strong>Terças e Quintas às 15h</strong></div>
+                    <button class="btn btn-primary" onclick="requestMentorship('Carlos Eduardo')">Solicitar Horário
+                        Gratuito</button>
+                </div>
+
+                <div class="mentor-card">
+                    <div class="mentor-profile">
+                        <div class="mentor-avatar" style="border-color: var(--primary);">AP</div>
+                        <div class="mentor-details">
+                            <h4>Ana Paula Ribeiro</h4>
+                            <span>Consultora em Transição Digital (49 anos)</span>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-muted); font-size: 0.98rem;">"Perder o medo de softwares modernos e
+                        descobrir oportunidades no trabalho remoto."</p>
+                    <div
+                        style="background: var(--lilac-bg); padding: 10px; border-radius: var(--radius-sm); font-size: 0.9rem;">
+                        Disponibilidade: <strong>Quartas e Sextas às 10h</strong></div>
+                    <button class="btn btn-primary" onclick="requestMentorship('Ana Paula')">Solicitar Horário
+                        Gratuito</button>
+                </div>
+
+                <div class="mentor-card">
+                    <div class="mentor-profile">
+                        <div class="mentor-avatar">RM</div>
+                        <div class="mentor-details">
+                            <h4>Roberto Meirelles</h4>
+                            <span>Gestor Financeiro (62 anos)</span>
+                        </div>
+                    </div>
+                    <p style="color: var(--text-muted); font-size: 0.98rem;">"Foco em consultoria independente, finanças
+                        pessoais e abertura de prestação de serviços como PJ."</p>
+                    <div
+                        style="background: var(--lilac-bg); padding: 10px; border-radius: var(--radius-sm); font-size: 0.9rem;">
+                        Disponibilidade: <strong>Segundas às 16h</strong></div>
+                    <button class="btn btn-primary" onclick="requestMentorship('Roberto Meirelles')">Solicitar Horário
+                        Gratuito</button>
+                </div>
+            </div>
+
+            <div id="vagasContent" class="jobs-grid" style="display: none;">
+                <div class="job-card">
+                    <div>
+                        <span class="job-badge-40">🌱 Selo Empresa Amiga da Maturidade</span>
+                        <h4 class="job-title">Analista Administrativo / Financeiro</h4>
+                        <p class="job-company">Grupo Integração • São Paulo (Híbrido)</p>
+                        <div class="job-tags">
+                            <span class="job-tag">R$ 5.200 a R$ 6.000</span>
+                            <span class="job-tag">CLT</span>
+                        </div>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 20px;">Buscamos perfil
+                            calmo, organizado e com maturidade para interface com fornecedores.</p>
+                    </div>
+                    <button class="btn btn-secondary"
+                        onclick="applyToJob('Analista Administrativo / Financeiro')">Candidatar-se com 1 Clique</button>
+                </div>
+
+                <div class="job-card">
+                    <div>
+                        <span class="job-badge-40">🌱 Selo Empresa Amiga da Maturidade</span>
+                        <h4 class="job-title">Coordenador(a) de Atendimento e Suporte</h4>
+                        <p class="job-company">Soluções Conectadas • 100% Remoto</p>
+                        <div class="job-tags">
+                            <span class="job-tag">R$ 6.800</span>
+                            <span class="job-tag">Home Office</span>
+                        </div>
+                        <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 20px;">Comunicação
+                            acolhedora e instrução de clientes com paciência.</p>
+                    </div>
+                    <button class="btn btn-secondary"
+                        onclick="applyToJob('Coordenador(a) de Atendimento')">Candidatar-se com 1 Clique</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 5: MEU PERFIL E CURRÍCULO -->
+        <section id="view-perfil" class="view-section">
+            <div class="section-header">
+                <span class="section-tag">Sua Identidade Profissional</span>
+                <h3 class="section-title">Meu Perfil e Currículo Otimizado</h3>
+                <p class="section-desc">Seus anos de dedicação organizados para demonstrar valor e consistência.</p>
+            </div>
+
+            <div class="profile-layout">
+                <div class="profile-sidebar">
+                    <div class="profile-large-avatar" aria-hidden="true">MS</div>
+                    <h3 style="color: var(--primary); font-size: 1.45rem;">Marta Silveira</h3>
+                    <p style="color: var(--text-muted); font-size: 1.05rem; margin-bottom: 12px;">52 anos • Curitiba, PR
+                    </p>
+                    <span
+                        style="background: var(--secondary-light); color: var(--secondary); padding: 6px 14px; border-radius: 20px; font-weight: 700; font-size: 0.85rem;">Disponível
+                        para recolocação</span>
+
+                    <hr style="margin: 24px 0; border: none; border-top: 1px solid var(--lilac-border);">
+
+                    <div style="text-align: left;">
+                        <h4 style="color: var(--primary); font-size: 1.1rem; margin-bottom: 8px;">Sobre mim</h4>
+                        <p style="color: var(--text-muted); font-size: 0.98rem; line-height: 1.5;">Mais de 25 anos de
+                            carreira na área de gestão de equipes e atendimento corporativo.</p>
+                    </div>
+
+                    <div style="margin-top: 24px;">
+                        <button class="btn btn-primary" style="width: 100%; margin-bottom: 10px;"
+                            onclick="generateResumePreview()">📄 Gerar Currículo em PDF</button>
+                        <button class="btn btn-outline" style="width: 100%;"
+                            onclick="showToast('Modo de edição ativado.')">✏️ Editar Meus Dados</button>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="dash-box">
+                        <h3>💼 Trajetória Profissional em Destaque</h3>
+                        <div class="timeline-item">
+                            <h5>Supervisora de Operações Sênior</h5>
+                            <span>Confiança Logística S/A • 2012 – 2023 (11 anos)</span>
+                            <p style="color: var(--text-muted); font-size: 0.98rem; margin-top: 6px;">Liderança de 45
+                                colaboradores, redução de 18% nos custos operacionais.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h5>Coordenadora de Atendimento ao Cliente</h5>
+                            <span>Varejo Sul Distribuidora • 2004 – 2012 (8 anos)</span>
+                            <p style="color: var(--text-muted); font-size: 0.98rem; margin-top: 6px;">Implementação de
+                                protocolos de satisfação e resolução de conflitos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- MODAIS -->
+    <div class="modal-overlay" id="modalCadastro" role="dialog" aria-modal="true" aria-labelledby="modalCadastroTitle">
+        <div class="modal-card">
+            <button class="modal-close" onclick="closeModal('modalCadastro')" aria-label="Fechar">✕</button>
+            <span class="section-tag">Novo Cadastro Gratuito</span>
+            <h3 id="modalCadastroTitle" style="color: var(--primary); font-size: 1.6rem; margin-bottom: 8px;">Dê o
+                primeiro passo</h3>
+            <form onsubmit="handleRegister(event)">
+                <div class="form-group">
+                    <label for="cadNome">Nome completo:</label>
+                    <input type="text" id="cadNome" placeholder="Ex: Maria das Graças Oliveira" required>
+                </div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+                    <div class="form-group">
+                        <label for="cadIdade">Sua idade:</label>
+                        <input type="number" id="cadIdade" min="40" max="100" value="48" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cadTel">WhatsApp:</label>
+                        <input type="tel" id="cadTel" placeholder="(00) 00000-0000" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="cadEmail">E-mail:</label>
+                    <input type="email" id="cadEmail" placeholder="seuemail@exemplo.com" required>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Finalizar Cadastro</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modalLogin" role="dialog" aria-modal="true" aria-labelledby="modalLoginTitle">
+        <div class="modal-card">
+            <button class="modal-close" onclick="closeModal('modalLogin')" aria-label="Fechar">✕</button>
+            <span class="section-tag">Acesso à Conta</span>
+            <h3 id="modalLoginTitle" style="color: var(--primary); font-size: 1.6rem; margin-bottom: 8px;">Bem-vindo(a)
+                de volta!</h3>
+            <form onsubmit="handleLogin(event)">
+                <div class="form-group">
+                    <label for="loginEmail">E-mail ou Telefone:</label>
+                    <input type="text" id="loginEmail" value="marta.silveira@exemplo.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPass">Senha:</label>
+                    <input type="password" id="loginPass" value="••••••••" required>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%; margin-bottom: 12px;">Entrar no Meu
+                    Painel</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modalResume" role="dialog" aria-modal="true">
+        <div class="modal-card" style="max-width: 680px;">
+            <button class="modal-close" onclick="closeModal('modalResume')">✕</button>
+            <span class="section-tag">Prévia Otimizada 40+</span>
+            <h3 style="color: var(--primary); font-size: 1.5rem; margin-bottom: 12px;">Currículo de Marta Silveira</h3>
+            <div
+                style="background: var(--lilac-bg); padding: 22px; border-radius: var(--radius-sm); border: 1px solid var(--lilac-border); margin-bottom: 20px;">
+                <h4 style="color: var(--primary); font-size: 1.25rem;">Marta Silveira</h4>
+                <p style="font-size: 0.95rem; color: var(--text-muted);">E-mail: marta.silveira@exemplo.com | Telefone:
+                    (41) 99876-5432</p>
+                <hr style="margin: 12px 0; border: none; border-top: 1px solid var(--lilac-border);">
+                <p style="font-weight: 700; color: var(--primary);">Resumo:</p>
+                <p style="font-size: 0.95rem;">Profissional com mais de 25 anos de solidez operacional, liderança
+                    acolhedora e habilidade comprovada na gestão de crises.</p>
+            </div>
+            <div style="display: flex; gap: 12px; justify-content: flex-end;">
+                <button class="btn btn-outline" onclick="closeModal('modalResume')">Fechar</button>
+                <button class="btn btn-primary" onclick="showToast('Baixando PDF...'); closeModal('modalResume');">📥
+                    Baixar PDF Formatado</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- TOAST DE FEEDBACK -->
+    <div class="toast-feedback" id="toastFeedback" role="status" aria-live="polite">
+        <span aria-hidden="true">✔</span>
+        <span id="toastMessage">Ação realizada com sucesso!</span>
+    </div>
+
+    <!-- RODAPÉ -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4 style="color: #FFFFFF; font-size: 1.4rem;">NOVOS CAMINHOS</h4>
+                <p style="color: #D3C4DF; margin-bottom: 16px;">Transformando a maturidade profissional através da
+                    educação inclusiva e conscientização corporativa.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Mapa do Site</h4>
+                <ul>
+                    <li><a onclick="navigateTo('view-inicio')">Início</a></li>
+                    <li><a onclick="navigateTo('view-jornada')">Minha Jornada</a></li>
+                    <li><a onclick="navigateTo('view-cursos')">Cursos Gratuitos</a></li>
+                    <li><a onclick="navigateTo('view-mentorias')">Mentorias & Vagas</a></li>
+                    <li><a onclick="navigateTo('view-perfil')">Meu Perfil</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Canais de Atendimento</h4>
+                <p style="font-size: 1.1rem; color: #FFFFFF; font-weight: 700;">📞 0800 404 4000</p>
+                <p style="color: #D3C4DF;">WhatsApp: (11) 94040-4040</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Plataforma NOVOS CAMINHOS. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Script Externo -->
+    <script src="script.js" defer></script>
+</body>
+
+</html>
