@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Novos Caminhos | Valorizando a sua maturidade profissional</title>
+    <title> Instituto R.U.M.O. </title>
 
     <!-- Fontes do Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
+    <link rel="shortcut icon" href="imagens/imagem1.jpg" type="image/x-icon">
 
     <!-- Folha de Estilos Externa -->
     <link rel="stylesheet" href="style.css">
@@ -18,47 +19,30 @@
 </head>
 
 <body>
-
-    <!-- BARRA DE ACESSIBILIDADE E APOIO HUMANO -->
-    <div class="top-accessibility-bar" role="region" aria-label="Ferramentas de acessibilidade">
-        <div class="accessibility-tools">
-            <span>Acessibilidade:</span>
-            <button class="tool-btn" onclick="adjustFontSize(1)" aria-label="Aumentar tamanho do texto">A+ Aumentar
-                fonte</button>
-            <button class="tool-btn" onclick="adjustFontSize(-1)" aria-label="Diminuir tamanho do texto">A- Diminuir
-                fonte</button>
-            <button class="tool-btn" onclick="toggleContrast()" aria-label="Alternar modo de alto contraste">◐ Alto
-                Contraste</button>
-        </div>
-        <div class="support-badge">
-            <span>💬 Dúvidas?</span> Central de Ajuda por WhatsApp disponível
-        </div>
-    </div>
-
     <!-- CABEÇALHO DA PLATAFORMA -->
     <header class="main-header">
         <div class="header-container">
             <a class="brand-logo" onclick="navigateTo('view-inicio')">
-                <div class="logo-badge" aria-hidden="true">NC</div>
+                <div class="logo-badge" aria-hidden="true"> <img src="imagens/imagem1.jpg"
+                        alt="Logo do Instituto R.U.M.O." width="60"> </div>
                 <div class="logo-texts">
-                    <h1>NOVOS CAMINHOS</h1>
-                    <p>Experiência & Futuro 40+</p>
+                    <h1>Instituto R.U.M.O.</h1>
                 </div>
             </a>
 
             <!-- Menu Principal -->
             <nav class="nav-menu" id="mainNav" aria-label="Navegação Principal">
                 <ul>
-                    <li><button class="nav-btn active" data-target="view-inicio" onclick="navigateTo('view-inicio')">🏠
-                            Início</button></li>
-                    <li><button class="nav-btn" data-target="view-jornada" onclick="navigateTo('view-jornada')">🧭 Minha
+                    <li><button class="nav-btn active" data-target="view-inicio"
+                            onclick="navigateTo('view-inicio')">Início</button></li>
+                    <li><button class="nav-btn" data-target="view-jornada" onclick="navigateTo('view-jornada')">Minha
                             jornada</button></li>
-                    <li><button class="nav-btn" data-target="view-cursos" onclick="navigateTo('view-cursos')">📚 Cursos
-                            gratuitos</button></li>
-                    <li><button class="nav-btn" data-target="view-mentorias" onclick="navigateTo('view-mentorias')">🤝
-                            Mentorias & Vagas</button></li>
-                    <li><button class="nav-btn" data-target="view-perfil" onclick="navigateTo('view-perfil')">👤 Meu
-                            perfil</button></li>
+                    <li><button class="nav-btn" data-target="view-cursos"
+                            onclick="navigateTo('view-cursos')">Cursos</button></li>
+                    <li><button class="nav-btn" data-target="view-mentorias"
+                            onclick="navigateTo('view-mentorias')">Mentorias e Vagas</button></li>
+                    <li><button class="nav-btn" data-target="view-perfil" onclick="navigateTo('view-perfil')">Meu
+                            Perfil</button></li>
                 </ul>
             </nav>
 
@@ -82,23 +66,22 @@
                     <div class="hero-tag">
                         <span></span> Combate ativo ao etarismo profissional
                     </div>
-                    <h2 class="hero-title">Sua experiência abre <span class="highlight">novos caminhos</span>.</h2>
+                    <h2 class="hero-title">Sua experiência abre <span class="highlight">novos caminhos.</span></h2>
                     <p class="hero-text">
                         A maturidade não é um ponto final, é a sua maior vantagem competitiva.
                         Oferecemos capacitação prática, mentorias humanizadas e conexão direta com empresas
                         comprometidas com a inclusão de profissionais acima de 40 anos.
                     </p>
                     <div class="hero-cta-group">
-                        <button class="btn btn-primary" onclick="openModal('modalCadastro')">Quero começar agora (100%
-                            Gratuito)</button>
-                        <button class="btn btn-outline" onclick="navigateTo('view-cursos')">Ver catálogo de
-                            cursos</button>
+                        <button class="btn btn-primary" onclick="openModal('modalCadastro')"> Quero começar
+                            agora </button>
+                        <button class="btn btn-outline" onclick="navigateTo('view-cursos')">Ver cursos</button>
                     </div>
                 </div>
 
                 <div class="hero-card-preview">
                     <div class="badge-float">Comunidade Ativa</div>
-                    <h3 style="color: var(--primary); margin-bottom: 10px; font-size: 1.3rem;">Espaço Seguro & Acolhedor
+                    <h3 style="color: var(--primary); margin-bottom: 10px; font-size: 1.3rem;">Espaço Seguro e Acolhedor
                     </h3>
                     <p style="color: var(--text-muted); font-size: 1.05rem; margin-bottom: 18px;">
                         Aqui você não precisa ter medo da tecnologia. Todas as nossas trilhas foram criadas com
@@ -106,7 +89,7 @@
                     </p>
                     <div
                         style="background: var(--lilac-bg); padding: 14px; border-radius: var(--radius-sm); border-left: 4px solid var(--secondary);">
-                        <strong style="color: var(--primary); display:block;">"Aos 53 anos, conquistei minha recolocação
+                        <strong style="color: var(--primary); display:block;">"Aos 38 anos, conquistei minha recolocação
                             com as mentorias do projeto."</strong>
                         <span style="font-size: 0.9rem; color: var(--text-muted);">— Marta Silveira, Analista de
                             Operações</span>
@@ -123,25 +106,45 @@
 
             <div class="benefits-grid">
                 <div class="benefit-card">
-                    <div class="benefit-icon" aria-hidden="true">💡</div>
+                    <div class="benefit-icon" aria-hidden="true"> <svg width="24" height="24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15 4a3.745 3.745 0 0 0-3 1.51A3.745 3.745 0 0 0 9 4H2v16h7.5c.69 0 1.25.56 1.25 1.25h2.5c0-.69.56-1.25 1.25-1.25H22V4h-7Zm-3.75 15.13a2.726 2.726 0 0 0-1.75-.63h-6v-13H9c1.24 0 2.25 1.01 2.25 2.25v11.38Zm9.25-.63h-6c-.665 0-1.275.235-1.75.63V7.75c0-1.24 1.01-2.25 2.25-2.25h5.5v13Z"
+                                fill="#202023" />
+                        </svg> </div>
                     <h3>Educação Acolhedora</h3>
                     <p>Cursos de letramento digital, ferramentas modernas e liderança sem jargões complicados. Aprenda
                         no seu próprio ritmo.</p>
                 </div>
                 <div class="benefit-card">
-                    <div class="benefit-icon" aria-hidden="true">🤝</div>
+                    <div class="benefit-icon" aria-hidden="true"> <svg width="24" height="24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M16 16h-1.5c0-1.415.76-2.455 1.5-3.46.77-1.055 1.5-2.055 1.5-3.54 0-3.035-2.465-5.5-5.5-5.5A5.503 5.503 0 0 0 6.5 9c0 1.485.73 2.485 1.5 3.54l.01.013c.731 1 1.49 2.038 1.49 3.447H8c0-.925-.56-1.69-1.21-2.575v-.001C5.95 12.274 5 10.974 5 9c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.975-.95 3.28-1.79 4.425C16.56 14.31 16 15.075 16 16Zm-7 4.5V22h6v-1.5H9ZM8 19v-1.5h8V19H8ZM20.72 2.217l-2 2.001 1.06 1.06 2.002-2-1.061-1.061ZM2.218 3.28l1.061-1.06 2.001 2-1.06 1.06-2.002-2ZM23 8.5h-2.5V10H23V8.5Zm-22 0h2.5V10H1V8.5Zm3.222 4.717L2.22 15.218l1.06 1.061 2.001-2.001-1.06-1.06Zm14.496 1.064 1.06-1.061 2.002 2.001-1.061 1.06-2.001-2Z"
+                                fill="#202023" />
+                        </svg> </div>
                     <h3>Mentorias Individuais</h3>
                     <p>Converse diretamente com mentores seniores que entendem o mercado de trabalho e ajudam a
                         reestruturar sua carreira.</p>
                 </div>
                 <div class="benefit-card">
-                    <div class="benefit-icon" aria-hidden="true">🏢</div>
+                    <div class="benefit-icon" aria-hidden="true"><svg width="24" height="24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M17.5 11V3h-11v5H3v13h18V11h-3.5Zm-11 8.5h-2v-10h2v10Zm9.5 0H8v-15h8v15Zm3.5 0h-2v-7h2v7ZM11 6H9.5v2.5H11V6Zm2 0h1.5v2.5H13V6Zm-2 4H9.5v2.5H11V10Zm2 0h1.5v2.5H13V10Zm-2 4H9.5v2.5H11V14Zm2 0h1.5v2.5H13V14Z"
+                                fill="#202023" />
+                        </svg></div>
                     <h3>Empresas Pró-Maturidade</h3>
                     <p>Acesso a processos seletivos em empresas que valorizam estabilidade emocional, capacidade
                         analítica e bagagem de vida.</p>
                 </div>
                 <div class="benefit-card">
-                    <div class="benefit-icon" aria-hidden="true">📑</div>
+                    <div class="benefit-icon" aria-hidden="true"> <svg width="24" height="24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M4 2h9.56L20 8.44V22H4V2Zm13.44 6L14 4.56V8h3.44ZM5.5 3.5v17h13v-11h-4.75c-.69 0-1.25-.56-1.25-1.25V3.5h-7Zm3.78 10.72 1.47 1.47 3.97-3.97 1.06 1.06-4.145 4.145a1.245 1.245 0 0 1-.885.365c-.32 0-.64-.12-.885-.365L8.22 15.28l1.06-1.06Z"
+                                fill="#202023" />
+                        </svg> </div>
                     <h3>Currículo Estratégico</h3>
                     <p>Aprenda a destacar o valor real dos seus anos de carreira sem deixar que o algoritmo descarte o
                         seu perfil.</p>
@@ -151,7 +154,7 @@
             <div class="company-banner">
                 <div>
                     <h3>Sua empresa valoriza a diversidade geracional?</h3>
-                    <p>Junte-se ao movimento NOVOS CAMINHOS. Ajude-nos a combater o etarismo, forme equipes
+                    <p>Junte-se ao movimento R.U.M.U. Ajude-nos a combater o etarismo, forme equipes
                         multidisciplinares mais resilientes e anuncie vagas inclusivas.</p>
                 </div>
                 <button class="btn"
@@ -165,7 +168,7 @@
             <div class="user-welcome-card">
                 <div class="user-welcome-info">
                     <span class="section-tag">Painel Pessoal</span>
-                    <h2>Olá, Marta Silveira! 👋</h2>
+                    <h2>Olá, Marta Silveira! </h2>
                     <p>Objetivo ativo: <strong>Transição de Carreira para Gestão de Projetos & Inovação</strong></p>
                 </div>
                 <div class="metric-badges">
@@ -178,7 +181,7 @@
             <div class="dashboard-grid">
                 <div>
                     <div class="dash-box">
-                        <h3>📖 Cursos em Andamento</h3>
+                        <h3>Cursos em Andamento</h3>
                         <div class="progress-item">
                             <div class="progress-header">
                                 <span>Letramento Digital e Ferramentas em Nuvem</span>

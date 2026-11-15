@@ -54,7 +54,7 @@ body {
     font-size: var(--base-font-size);
     line-height: 1.6;
     color: var(--text-main);
-    background-color: #FDFBFE;
+    background-color: #e6e5e7;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
 }
@@ -95,7 +95,7 @@ select:focus-visible {
     padding: 4px 10px;
     border-radius: var(--radius-sm);
     cursor: pointer;
-    font-weight: 700;
+    font-weight: 666;
     display: inline-flex;
     align-items: center;
     gap: 4px;
@@ -159,13 +159,13 @@ header.main-header {
     align-items: center;
     justify-content: center;
     font-size: 1.5rem;
-    font-weight: 800;
+    font-weight: 666;
     box-shadow: 0 4px 10px rgba(199, 46, 191, 0.25);
 }
 
 .logo-texts h1 {
     font-size: 1.35rem;
-    font-weight: 800;
+    font-weight: 666;
     color: var(--primary);
     letter-spacing: -0.5px;
     line-height: 1.1;
@@ -326,7 +326,7 @@ main {
     display: inline-block;
     background: var(--secondary-light);
     color: var(--secondary);
-    font-weight: 800;
+    font-weight: 666;
     font-size: 0.85rem;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -337,7 +337,7 @@ main {
 
 .section-title {
     font-size: 2.2rem;
-    font-weight: 800;
+    font-weight: 666;
     color: var(--primary);
     line-height: 1.2;
 }
@@ -368,12 +368,12 @@ main {
     align-items: center;
     gap: 8px;
     background: var(--white);
-    color: var(--primary);
+    color: var(#1a1a1a);
     border: 1px solid var(--lilac-border);
     padding: 8px 16px;
     border-radius: 30px;
     font-size: 0.95rem;
-    font-weight: 700;
+    font-weight: 666;
     margin-bottom: 20px;
 }
 
@@ -386,10 +386,10 @@ main {
 
 .hero-title {
     font-size: 2.8rem;
-    color: var(--primary);
+    color: var(#1a1a1a);
     line-height: 1.15;
     margin-bottom: 20px;
-    font-weight: 800;
+    font-weight: 666;
 }
 
 .hero-title .highlight {
@@ -426,7 +426,7 @@ main {
     color: var(--white);
     padding: 6px 14px;
     font-size: 0.85rem;
-    font-weight: 700;
+    font-weight: 666;
     border-radius: 30px;
 }
 
@@ -469,7 +469,7 @@ main {
     font-size: 1.35rem;
     color: var(--primary);
     margin-bottom: 12px;
-    font-weight: 700;
+    font-weight: 666;
 }
 
 .benefit-card p {
@@ -493,7 +493,7 @@ main {
 .company-banner h3 {
     font-size: 2rem;
     margin-bottom: 10px;
-    font-weight: 800;
+    font-weight: 666;
 }
 
 .company-banner p {
@@ -525,7 +525,7 @@ main {
 .user-welcome-info h2 {
     color: var(--primary);
     font-size: 1.8rem;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 .user-welcome-info p {
@@ -708,7 +708,7 @@ main {
     background: rgba(255, 255, 255, 0.95);
     color: var(--primary);
     font-size: 0.82rem;
-    font-weight: 800;
+    font-weight: 666;
     padding: 4px 12px;
     border-radius: 20px;
 }
@@ -814,7 +814,7 @@ main {
     align-items: center;
     justify-content: center;
     font-size: 1.8rem;
-    font-weight: 800;
+    font-weight: 666;
     border: 2px solid var(--secondary);
 }
 
@@ -833,7 +833,7 @@ main {
     color: #117336;
     border: 1px solid #B8E8C7;
     font-size: 0.85rem;
-    font-weight: 800;
+    font-weight: 666;
     padding: 4px 10px;
     border-radius: 6px;
     display: inline-flex;
@@ -899,7 +899,7 @@ main {
     align-items: center;
     justify-content: center;
     font-size: 2.5rem;
-    font-weight: 800;
+    font-weight: 666;
     margin: 0 auto 16px;
 }
 
