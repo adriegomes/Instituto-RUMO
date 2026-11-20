@@ -26,9 +26,9 @@
         <div class="header-container">
             <a class="brand-logo" onclick="navigateTo('view-inicio')">
                 <div class="logo-badge" aria-hidden="true"> <img src="imagens/imagem1.jpg"
-                        alt="Logo do Instituto R.U.M.O." width="60"> </div>
+                        alt="Logo do Instituto R.U.M.O." width="50"> </div>
                 <div class="logo-texts">
-                    <h1>Instituto R.U.M.O.</h1>
+                    <h1>INSTITUTO R.U.M.O.</h1>
                 </div>
             </a>
 
@@ -37,22 +37,27 @@
                 <ul>
                     <li><button class="nav-btn active" data-target="view-inicio"
                             onclick="navigateTo('view-inicio')">Início</button></li>
-                    <li><button class="nav-btn" data-target="view-jornada" onclick="navigateTo('view-jornada')">Minha
-                            jornada</button></li>
+                    <li><button class="nav-btn" data-target="view-jornada"
+                            onclick="navigateTo('view-jornada')">Jornada</button></li>
                     <li><button class="nav-btn" data-target="view-cursos"
                             onclick="navigateTo('view-cursos')">Cursos</button></li>
                     <li><button class="nav-btn" data-target="view-mentorias"
-                            onclick="navigateTo('view-mentorias')">Mentorias e Vagas</button></li>
-                    <li><button class="nav-btn" data-target="view-perfil" onclick="navigateTo('view-perfil')">Meu
-                            Perfil</button></li>
+                            onclick="navigateTo('view-mentorias')">Carreiras</button></li>
+                    <li><button class="nav-btn" data-target="view-perfil"
+                            onclick="navigateTo('view-perfil')">Perfil</button></li>
+
+                    <!-- Ações de Login / Cadastro -->
+                    <div class="user-actions">
+                        <button class="btn btn-outline" id="btnLoginHeader"
+                            onclick="openModal('modalLogin')">Entrar</button>
+                        <button class="btn btn-primary" id="btnRegisterHeader"
+                            onclick="openModal('modalCadastro')">Cadastre-se</button>
+
+                    </div>
                 </ul>
             </nav>
 
-            <!-- Ações de Login / Cadastro -->
             <div class="user-actions">
-                <button class="btn btn-outline" id="btnLoginHeader" onclick="openModal('modalLogin')">Entrar</button>
-                <button class="btn btn-primary" id="btnRegisterHeader"
-                    onclick="openModal('modalCadastro')">Cadastre-se</button>
                 <button class="mobile-menu-toggle" onclick="toggleMobileMenu()"
                     aria-label="Abrir menu de navegação">☰</button>
             </div>
@@ -601,7 +606,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>© 2026 Plataforma NOVOS CAMINHOS. Todos os direitos reservados.</p>
+            <p>© 2026 Plataforma Instituto R.U.M.O. Todos os direitos reservados.</p>
         </div>
     </footer>
 

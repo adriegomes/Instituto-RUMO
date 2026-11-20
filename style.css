@@ -5,23 +5,31 @@
     --primary: #6C1FA2;
     /* Roxo oficial */
     --primary-dark: #440e68;
+
     /* Roxo escuro para hover */
     --secondary: #C72EBF;
+
     /* Magenta oficial */
     --secondary-light: #F8E6F7;
+
     /* Magenta suave */
     --lilac-bg: #F7F1FA;
+
     /* Fundo lilás claro */
     --lilac-border: #E8D7F3;
+
     /* Borda suave */
     --text-main: #201826;
+
     /* Quase preto para alto contraste */
     --text-muted: #574F61;
+
     /* Cinza chumbo legível */
     --white: #FFFFFF;
     --success: #1E7E34;
     --success-bg: #E8F5E9;
     --base-font-size: 18px;
+
     /* Fonte base maior por padrão */
     --radius-sm: 8px;
     --radius-md: 14px;
@@ -50,7 +58,7 @@ body.high-contrast {
 }
 
 body {
-    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: var(--base-font-size);
     line-height: 1.6;
     color: var(--text-main);
@@ -132,13 +140,15 @@ header.main-header {
 }
 
 .header-container {
+    width: 100%;
     max-width: 1240px;
     margin: 0 auto;
-    padding: 16px 20px;
+    padding: 0.765rem 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
+    gap: 8px;
+    box-sizing: border-box;
 }
 
 .brand-logo {
@@ -164,7 +174,8 @@ header.main-header {
 }
 
 .logo-texts h1 {
-    font-size: 1.35rem;
+    font-size: 1rem;
+    max-width: 10ch;
     font-weight: 666;
     color: var(--primary);
     letter-spacing: -0.5px;
@@ -182,15 +193,14 @@ header.main-header {
 nav.nav-menu ul {
     display: flex;
     list-style: none;
-    gap: 8px;
+    align-items: center;
 }
 
 .nav-btn {
     background: transparent;
     border: none;
     color: var(--text-main);
-    padding: 12px 16px;
-    font-size: 1rem;
+    padding: 12px 12px;
     font-weight: 600;
     border-radius: var(--radius-md);
     cursor: pointer;
@@ -226,12 +236,20 @@ nav.nav-menu ul {
 .user-actions {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 6px;
+    padding: 0.45rem 0.85rem;
+    font-size: 0.875rem;
+    line-height: 1.2;
+    white-space: nowrap;
+    border-radius: 8px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: var(--transition);
 }
 
 /* Botões */
 .btn {
-    padding: 12px 24px;
+    padding: 0.5rem 1rem;
     font-size: 1rem;
     font-weight: 700;
     border-radius: var(--radius-md);
@@ -243,7 +261,7 @@ nav.nav-menu ul {
     text-decoration: none;
     transition: var(--transition);
     border: 2px solid transparent;
-    min-height: 52px;
+    min-height: 46px;
 }
 
 .btn-primary {
@@ -368,7 +386,7 @@ main {
     align-items: center;
     gap: 8px;
     background: var(--white);
-    color: var(#1a1a1a);
+    color: var(--secondary);
     border: 1px solid var(--lilac-border);
     padding: 8px 16px;
     border-radius: 30px;
@@ -386,7 +404,7 @@ main {
 
 .hero-title {
     font-size: 2.8rem;
-    color: var(#1a1a1a);
+    color: var(--secondary);
     line-height: 1.15;
     margin-bottom: 20px;
     font-weight: 666;
@@ -1157,23 +1175,20 @@ footer.main-footer {
 }
 
 /* ===== Ajustes de responsividade ===== */
-@media (max-width: 992px) {
-    
-}
+@media (max-width: 992px) {}
 
-@media (max-width: 600px) {
-    
-}
+@media (max-width: 600px) {}
 
 /* ===== Correção de overflow ===== */
-.hero-banner > *,
-.dashboard-grid > *,
-.profile-layout > *,
-.footer-container > * {
+.hero-banner>*,
+.dashboard-grid>*,
+.profile-layout>*,
+.footer-container>* {
     min-width: 0;
 }
 
 @media (max-width: 600px) {
+
     html,
     body {
         max-width: 100%;
@@ -1181,7 +1196,6 @@ footer.main-footer {
     }
 
     .header-container {
-        flex-wrap: wrap;
         gap: 10px 12px;
         padding: 12px 16px;
     }
@@ -1196,7 +1210,6 @@ footer.main-footer {
     }
 
     .user-actions {
-        width: 100%;
         justify-content: space-between;
     }
 
