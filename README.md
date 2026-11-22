@@ -11,7 +11,7 @@
 
 ---
 ## 🟣 Sobre o projeto
-O **Instituto R.U.M.O. (Rede de União, Mentoria e Oportunidades)** é uma plataforma digital criada para combater o etarismo profissional e valorizar profissionais com 40 anos ou mais.
+O **Instituto R.U.M.O. (Rede de Upskilling, Mentoria e Oportunidades)** é uma plataforma digital criada para combater o etarismo profissional e valorizar profissionais com 40 anos ou mais.
 
 Diante das dificuldades enfrentadas por esse público no mercado de trabalho, a plataforma oferece acesso a cursos, mentorias e oportunidades profissionais, incentivando o desenvolvimento de novas competências e a inclusão no ambiente corporativo.
 
@@ -90,6 +90,6 @@ Desenvolvido por:
   ---
   
   <div align="center">
-  <p><strong> Instituto R.U.M.O. <strong></p>
+  <p><strong> Instituto R.U.M.O. </strong></p>
   <p>Valorizando experiências e construindo novos rumos.</p> <!-- Trocar essa frase -->
   </div>
