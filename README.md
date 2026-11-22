@@ -80,12 +80,12 @@ Diante das dificuldades enfrentadas por esse público no mercado de trabalho, a 
 
 Desenvolvido por:
 
-- **Adrielli Gomes** - <!-- Adicionar função -->.
-- **Gustavo Henrique** - <!-- Adicionar função -->.
-- **Luysa Rocha** - <!-- Adicionar função -->.
-- **Maria Elani** - <!-- Adicionar função -->.
-- **Kemilly Campos** - <!-- Adicionar função -->.
-- **Thomas Pires** - <!-- Adicionar função -->.
+- <a href="https://github.com/adriegomes"> Adrielli Gomes </a> - <!-- Adicionar função -->.
+- <a href="https://github.com/GUGAX29">Gustavo Henrique</a> - <!-- Adicionar função -->.
+- <a href=".">Luysa Rocha</a> - <!-- Adicionar função -->.
+- <a href=".">Maria Elani</a> - <!-- Adicionar função -->.
+- <a href="https://github.com/kemillycamps">Kemilly Campos</a> - <!-- Adicionar função -->.
+- <a href="https://github.com/piresthomas-max">Thomas Pires</a> - <!-- Adicionar função -->.
 
   ---
   
