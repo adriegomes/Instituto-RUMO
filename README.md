@@ -16,7 +16,7 @@ O **Instituto R.U.M.O. (Rede de União, Mentoria e Oportunidades)** é uma plata
 Diante das dificuldades enfrentadas por esse público no mercado de trabalho, a plataforma oferece acesso a cursos, mentorias e oportunidades profissionais, incentivando o desenvolvimento de novas competências e a inclusão no ambiente corporativo.
 
 ## 🚀 Funcionalidades
-
+<!-- Ir adicionando conforme o código -->
 ### 🏠 Página inicial
 - Apresentação do Instituto R.U.M.O.
 - Exposição dos pilares e propostas do instituto.
@@ -52,22 +52,44 @@ Diante das dificuldades enfrentadas por esse público no mercado de trabalho, a 
 
 ## 📱 Imagens das telas
 
+### Página inicial
+
+<!-- Imagem -->
+
+### Minha jornada
+
+<!-- Imagem -->
+
+### Cursos
+
+<!-- Imagem -->
+
+### Mentorias e oportunidades
+
+<!-- Imagem -->
+
+### Meu perfil
+
+<!-- Imagem -->
+
 ## ▶️ Como executar
+
+<!-- Colocar dps -->
 
 ## 👥 Integrantes
 
 Desenvolvido por:
 
-- **Adrielli Gomes** - (Adicionar função).
-- **Gustavo Henrique** - (Adicionar função).
-- **Luysa Rocha** - (Adicionar função).
-- **Maria Elani** - (Adicionar função).
-- **Kemilly Campos** - (Adicionar função).
-- **Thomas Pires** - (Adicionar função).
+- **Adrielli Gomes** - <!-- Adicionar função -->.
+- **Gustavo Henrique** - <!-- Adicionar função -->.
+- **Luysa Rocha** - <!-- Adicionar função -->.
+- **Maria Elani** - <!-- Adicionar função -->.
+- **Kemilly Campos** - <!-- Adicionar função -->.
+- **Thomas Pires** - <!-- Adicionar função -->.
 
   ---
   
   <div align="center">
   <p><strong> Instituto R.U.M.O. <strong></p>
-  <p>Valorizando experiências e construindo novos rumos.</p> <!-- Trocar essa frase --!>
-  <div>
+  <p>Valorizando experiências e construindo novos rumos.</p> <!-- Trocar essa frase -->
+  </div>
