@@ -180,6 +180,7 @@ header.main-header {
     color: var(--primary);
     letter-spacing: -0.5px;
     line-height: 1.1;
+    display: none;
 }
 
 .logo-texts p {
@@ -237,14 +238,6 @@ nav.nav-menu ul {
     display: flex;
     align-items: center;
     gap: 6px;
-    padding: 0.45rem 0.85rem;
-    font-size: 0.875rem;
-    line-height: 1.2;
-    white-space: nowrap;
-    border-radius: 8px;
-    box-sizing: border-box;
-    cursor: pointer;
-    transition: var(--transition);
 }
 
 /* Botões */
@@ -1115,6 +1108,7 @@ footer.main-footer {
 
 /* Responsividade */
 @media (max-width: 992px) {
+
     .hero-banner {
         grid-template-columns: 1fr;
         padding: 34px 24px;
@@ -1169,6 +1163,7 @@ footer.main-footer {
 /* ===== Ajustes de responsividade ===== */
 
 @media (max-width: 1100px) {
+
     .hero-title {
         font-size: 2.2rem;
     }
@@ -1218,5 +1213,12 @@ footer.main-footer {
         padding: 8px 12px;
         min-height: 40px;
         font-size: 0.9rem;
+    }
+
+}
+
+@media (min-width: 382px) {
+    .logo-texts h1 {
+        display: block;
     }
 }
