@@ -1,23 +1,95 @@
 <div align= "center">
 <img width="200" height="200" alt="Logo Instituto R.U.M.O." src="imagens/imagem1.jpg"/>
 <br><br>
-<!-- Adicionar link do figma e outros --!>
+<!-- Lembrar de colocar aqui o link do figma e outros --!>
 
 <h1>Instituto R.U.M.O.</h1>
-<p><strong> Rede de União, Mentoria e Oportunidades </strong></p>
-<!-- Adicionar aqui link do site --!>
+<p><strong> Rede de Upskilling, Mentoria e Oportunidades </strong></p>
+<!-- aqui o link do site --!>
 
 </div>
 
 ---
-## 🟣Sobre o projeto
-O **Instituto R.U.M.O.** é uma plataforma digital desenvolvida com propósito de combater o etarismo profissional e promover a valorização de profissionais experientes no mercado de trabalho.
-A iniciativa busca conectar esses profissionais a oportunidades de capaçitação, mentorias e recolocação profissional, incentivando a aprendizagem contínua e a inclusão de diferentes gerações no ambiente corporativo.
+## 🟣 Sobre o projeto
+O **Instituto R.U.M.O. (Rede de Upskilling, Mentoria e Oportunidades)** é uma plataforma digital criada para combater o etarismo profissional e valorizar profissionais com 40 anos ou mais.
 
-## Objetivo
-Desenvolver um ambiente digital acessível e intuitivo que valorize a trajetória profissional, facilite o desenvolvimento de novas competências e amplie as oportunidades de inserção e permanência de profissionais experientes no mercado de trabalho.
+Diante das dificuldades enfrentadas por esse público no mercado de trabalho, a plataforma oferece acesso a cursos, mentorias e oportunidades profissionais, incentivando o desenvolvimento de novas competências e a inclusão no ambiente corporativo.
 
-## Funcionalidades
+## 🚀 Funcionalidades
+<!-- Ir adicionando conforme o código -->
+### 🏠 Página inicial
+- Apresentação do Instituto R.U.M.O.
+- Exposição dos pilares e propostas do instituto.
+- Destaque para a valorização da experiência profissional.
 
+### 📊 Minha jornada
+- Acompanhamento do progresso nos cursos.
+- Visualização de competências e atividades.
+
+### 📚 Cursos
+- Exibição dos cursos disponíveis.
+- Filtros para facilitar a busca por categorias.
+
+### 🤝 Mentorias e oportunidades
+- Apresentação de mentores.
+- Exibição de vagas e oportunidades profissionais.
+- Simulação de solicitações de mentorias e candidaturas.
+
+### 👤 Meu perfil
+- Exibição de informações pessoais e profissionais.
+- Visualização de competências e currículo.
+
+### 🔐 Cadastro e login
+- Telas de cadastro e autenticação demonstrativas.
 ---
-## Tecnologias utilizadas
+
+## 🛠️ Tecnologias utilizadas
+
+- **HTML5** — Estrutura das páginas.
+- **CSS3** — Estilização e identidade visual.
+- **JavaScript** — Interações e funcionalidades.
+- **Figma** — Prototipagem e design das telas.
+
+## 📱 Imagens das telas
+
+### Página inicial
+
+<!-- Imagem -->
+
+### Minha jornada
+
+<!-- Imagem -->
+
+### Cursos
+
+<!-- Imagem -->
+
+### Mentorias e oportunidades
+
+<!-- Imagem -->
+
+### Meu perfil
+
+<!-- Imagem -->
+
+## ▶️ Como executar
+
+<!-- Colocar dps -->
+
+## 👥 Integrantes
+
+Desenvolvido por:
+
+- <a href="https://github.com/adriegomes"> Adrielli Gomes </a> - <!-- Adicionar função -->.
+- <a href="https://github.com/GUGAX29">Gustavo Henrique</a> - <!-- Adicionar função -->.
+- <a href=".">Luysa Rocha</a> - <!-- Adicionar função -->.
+- <a href=".">Maria Elani</a> - <!-- Adicionar função -->.
+- <a href="https://github.com/kemillycamps">Kemilly Campos</a> - <!-- Adicionar função -->.
+- <a href="https://github.com/piresthomas-max">Thomas Pires</a> - <!-- Adicionar função -->.
+
+  ---
+  
+  <div align="center">
+  <p><strong> Instituto R.U.M.O. </strong></p>
+  <p>Valorizando experiências e construindo novos rumos.</p> <!-- Trocar essa frase -->
+  </div>
