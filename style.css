@@ -1217,7 +1217,7 @@ footer.main-footer {
 
 }
 
-@media (min-width: 382px) {
+@media (min-width: 408px) {
     .logo-texts h1 {
         display: block;
     }
