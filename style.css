@@ -517,6 +517,8 @@ main {
     background: var(--white);
     color: var(--primary);
     flex-shrink: 0;
+    margin: 1.125rem;
+    align-items: center;
 }
 
 /* Jornada / Dashboard */
@@ -1105,6 +1107,14 @@ footer.main-footer {
     flex-wrap: wrap;
     gap: 12px;
 }
+
+.icone-card {
+    width: 10rem;
+    height: 6rem;
+    color: var(--secondary-light);
+
+}
+
 
 /* Responsividade */
 @media (max-width: 992px) {

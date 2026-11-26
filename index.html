@@ -172,7 +172,7 @@
                 <div class="user-welcome-info">
                     <span class="section-tag">Painel Pessoal</span>
                     <h2>Olá, Marta Silveira! </h2>
-                    <p>Objetivo ativo: <strong>Transição de Carreira para Gestão de Projetos & Inovação</strong></p>
+                    <p>Objetivo ativo: <strong>Transição de Carreira para Gestão de Projetos e Inovação</strong></p>
                 </div>
                 <div class="metric-badges">
                     <div class="metric-pill"><strong>2</strong><span>Em andamento</span></div>
@@ -205,7 +205,7 @@
 
                         <div class="progress-item">
                             <div class="progress-header">
-                                <span>Liderança Intergeracional & Gestão Humanizada</span>
+                                <span>Liderança Intergeracional e Gestão Humanizada</span>
                                 <span style="color: var(--primary);">40%</span>
                             </div>
                             <div class="progress-bar-container">
@@ -227,11 +227,11 @@
                         <p style="color: var(--text-muted); font-size: 1rem; margin-bottom: 12px;">Habilidades validadas
                             a partir do seu histórico:</p>
                         <div class="skill-chips">
-                            <span class="skill-chip">✔ Resolução de Conflitos</span>
-                            <span class="skill-chip">✔ Comunicação Empática</span>
-                            <span class="skill-chip">✔ Gestão de Pessoas</span>
-                            <span class="skill-chip">✔ Resiliência Operacional</span>
-                            <span class="skill-chip">✔ Inteligência Emocional</span>
+                            <span class="skill-chip">Resolução de Conflitos</span>
+                            <span class="skill-chip">Comunicação Empática</span>
+                            <span class="skill-chip">Gestão de Pessoas</span>
+                            <span class="skill-chip">Resiliência Operacional</span>
+                            <span class="skill-chip">Inteligência Emocional</span>
                         </div>
                     </div>
                 </div>
@@ -266,7 +266,7 @@
             </div>
         </section>
 
-        <!-- SEÇÃO 3: CURSOS GRATUITOS -->
+        <!-- SEÇÃO 3: CURSOS -->
         <section id="view-cursos" class="view-section">
             <div class="section-header">
                 <span class="section-tag">Capacitação Contínua</span>
@@ -277,14 +277,19 @@
 
             <div class="filter-bar">
                 <button class="filter-btn active" onclick="filterCourses('todos', this)">Todos os cursos</button>
-                <button class="filter-btn" onclick="filterCourses('digital', this)">Tecnologia & Ferramentas</button>
-                <button class="filter-btn" onclick="filterCourses('lideranca', this)">Gestão & Liderança</button>
-                <button class="filter-btn" onclick="filterCourses('carreira', this)">Planejamento & Currículo</button>
+                <button class="filter-btn" onclick="filterCourses('digital', this)">Tecnologia e Ferramentas</button>
+                <button class="filter-btn" onclick="filterCourses('lideranca', this)">Gestão e Liderança</button>
+                <button class="filter-btn" onclick="filterCourses('carreira', this)">Planejamento e Currículo</button>
             </div>
 
             <div class="courses-grid" id="coursesContainer">
                 <article class="course-card" data-category="digital">
-                    <div class="course-thumbnail">💻<span class="course-badge-level">Iniciante Amigável</span></div>
+                    <div class="course-thumbnail"> <svg class="icone-card" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M22 10.5h-1.085A6.507 6.507 0 0 1 16 15.82v1.68h4V22h-1.5v-3h-13v3H4v-4.5h4v-1.68a6.507 6.507 0 0 1-4.915-5.32H2V9h1.025C3.28 5.65 6.085 3 9.5 3h1.75V1h1.5v2h1.75c3.415 0 6.22 2.65 6.475 6H22v1.5Zm-12.5-6c-2.755 0-5 2.245-5 5s2.245 5 5 5h5c2.755 0 5-2.245 5-5s-2.245-5-5-5h-5Zm0 13h5V16h-5v1.5ZM8 7h1.5v3H8V7Zm8 0h-1.5v3H16V7Zm-6 4.5h4V13h-4v-1.5Z"
+                                fill="currentColor" />
+                        </svg> <span class="course-badge-level">Iniciante Amigável</span></div>
                     <div class="course-content">
                         <h4>Inteligência Artificial Prática para o Dia a Dia</h4>
                         <p>Utilize o ChatGPT e outras ferramentas para acelerar redação de e-mails, relatórios e
@@ -298,7 +303,12 @@
                 </article>
 
                 <article class="course-card" data-category="lideranca">
-                    <div class="course-thumbnail">👥<span class="course-badge-level">Intermediário</span></div>
+                    <div class="course-thumbnail"><svg class="icone-card" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M7 9C5.07 9 3.5 7.43 3.5 5.5S5.07 2 7 2s3.5 1.57 3.5 3.5S8.93 9 7 9Zm0-5.5a2 2 0 1 0-.001 3.999A2 2 0 0 0 7 3.5Zm6.5 2C13.5 7.43 15.07 9 17 9s3.5-1.57 3.5-3.5S18.93 2 17 2s-3.5 1.57-3.5 3.5Zm1.5 0a2 2 0 1 1 3.999-.001A2 2 0 0 1 15 5.5Zm-6.5 7c0 1.93 1.57 3.5 3.5 3.5s3.5-1.57 3.5-3.5S13.93 9 12 9s-3.5 1.57-3.5 3.5Zm1.5 0a2 2 0 1 1 3.999-.001A2 2 0 0 1 10 12.5Zm5.92 7.425.61 2.27v-.005l1.45-.39-.61-2.265a2.75 2.75 0 0 0-2.655-2.04h-5.43c-1.24 0-2.335.84-2.655 2.04l-.61 2.27 1.45.39.61-2.27c.145-.545.64-.925 1.205-.925h5.43c.565 0 1.06.38 1.205.925Zm4.505-7 .74 2.77 1.45-.39-.74-2.765a2.75 2.75 0 0 0-2.655-2.04h-2.215V12h2.215c.565 0 1.06.38 1.205.925Zm-19.04 2.38 1.45.39v-.005l.74-2.77c.145-.545.64-.925 1.205-.925h2.215v-1.5H4.78c-1.24 0-2.335.84-2.655 2.04l-.74 2.77Z"
+                                fill="currentColor" />
+                        </svg><span class="course-badge-level">Intermediário</span></div>
                     <div class="course-content">
                         <h4>Liderança Intergeracional</h4>
                         <p>Como liderar e colaborar produtivamente com profissionais das gerações Z e Y.</p>
@@ -311,7 +321,12 @@
                 </article>
 
                 <article class="course-card" data-category="digital">
-                    <div class="course-thumbnail">📊<span class="course-badge-level">Do Zero ao Prático</span></div>
+                    <div class="course-thumbnail"><svg class="icone-card" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M19.75 12.5H15.5V8.75c0-.69-.56-1.25-1.25-1.25H10V4.25C10 3.56 9.44 3 8.75 3h-4.5C3.56 3 3 3.56 3 4.25V21h18v-7.25c0-.69-.56-1.25-1.25-1.25Zm-15.25 7v-15h4v15h-4Zm9.5 0h-4V9h4v10.5Zm5.5 0h-4V14h4v5.5Z"
+                                fill="currentColor" />
+                        </svg><span class="course-badge-level">Do Zero ao Prático</span></div>
                     <div class="course-content">
                         <h4>Excel e Análise de Dados Sem Mistério</h4>
                         <p>Planilhas organizadas, fórmulas essenciais e gráficos explicativos com calma e exemplos
@@ -325,9 +340,14 @@
                 </article>
 
                 <article class="course-card" data-category="carreira">
-                    <div class="course-thumbnail">✨<span class="course-badge-level">Essencial 40+</span></div>
+                    <div class="course-thumbnail"><svg class="icone-card" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M19.25 3C20.2165 3 21 3.7835 21 4.75V19.25C21 20.2165 20.2165 21 19.25 21H4.75C3.7835 21 3 20.2165 3 19.25V4.75C3 3.7835 3.7835 3 4.75 3H19.25ZM4.75 4.5C4.61193 4.5 4.5 4.61193 4.5 4.75V19.25C4.5 19.3881 4.61193 19.5 4.75 19.5H19.25C19.3881 19.5 19.5 19.3881 19.5 19.25V4.75C19.5 4.61193 19.3881 4.5 19.25 4.5H4.75ZM8 18H6.5V10H8V18ZM11.5 11C12.2964 10.4116 13.3576 10 14.5 10C15.2708 10 16.0292 10.2325 16.6025 10.7617C17.1856 11.3 17.5 12.0744 17.5 13V18H16V13C16 12.4257 15.8143 12.075 15.585 11.8633C15.3457 11.6426 14.9791 11.5 14.5 11.5C13.6828 11.5 12.9041 11.8095 12.334 12.25C11.7369 12.7114 11.5 13.2041 11.5 13.5V18H10V10H11.5V11ZM7.25 6.5C7.80228 6.5 8.25 6.94772 8.25 7.5C8.25 8.05228 7.80228 8.5 7.25 8.5C6.69772 8.5 6.25 8.05228 6.25 7.5C6.25 6.94772 6.69772 6.5 7.25 6.5Z"
+                                fill="currentColor" />
+                        </svg><span class="course-badge-level">Essencial 40+</span></div>
                     <div class="course-content">
-                        <h4>LinkedIn Estratégico & Marca Pessoal</h4>
+                        <h4>LinkedIn Estratégico e Marca Pessoal</h4>
                         <p>Construa presença digital de prestígio e seja encontrado por recrutadores.</p>
                         <div class="course-footer">
                             <span class="course-meta">⏱️ 10 horas • Certificado</span>
@@ -342,7 +362,7 @@
         <!-- SEÇÃO 4: MENTORIAS E VAGAS -->
         <section id="view-mentorias" class="view-section">
             <div class="section-header">
-                <span class="section-tag">Conexão Humana & Trabalho</span>
+                <span class="section-tag">Conexão Humana e Trabalho</span>
                 <h3 class="section-title">Mentorias dedicadas e vagas inclusivas</h3>
                 <p class="section-desc">Converse com quem entende seus desafios e encontre empresas parceiras.</p>
             </div>
@@ -377,7 +397,7 @@
                         <div class="mentor-avatar" style="border-color: var(--primary);">A</div>
                         <div class="mentor-details">
                             <h4>Ana Paula Ribeiro</h4>
-                            <span>Consultora em Transição Digital (49 anos)</span>
+                            <span>Consultora em Transição Digital (39 anos)</span>
                         </div>
                     </div>
                     <p style="color: var(--text-muted); font-size: 0.98rem;">"Perder o medo de softwares modernos e
@@ -394,7 +414,7 @@
                         <div class="mentor-avatar">R</div>
                         <div class="mentor-details">
                             <h4>Roberto Meirelles</h4>
-                            <span>Gestor Financeiro (62 anos)</span>
+                            <span>Gestor Financeiro (50 anos)</span>
                         </div>
                     </div>
                     <p style="color: var(--text-muted); font-size: 0.98rem;">"Foco em consultoria independente, finanças
@@ -590,10 +610,10 @@
                 <h4>Mapa do Site</h4>
                 <ul>
                     <li><a onclick="navigateTo('view-inicio')">Início</a></li>
-                    <li><a onclick="navigateTo('view-jornada')">Minha Jornada</a></li>
-                    <li><a onclick="navigateTo('view-cursos')">Cursos Gratuitos</a></li>
-                    <li><a onclick="navigateTo('view-mentorias')">Mentorias e Vagas</a></li>
-                    <li><a onclick="navigateTo('view-perfil')">Meu Perfil</a></li>
+                    <li><a onclick="navigateTo('view-jornada')">Jornada</a></li>
+                    <li><a onclick="navigateTo('view-cursos')">Cursos</a></li>
+                    <li><a onclick="navigateTo('view-mentorias')">Carreiras</a></li>
+                    <li><a onclick="navigateTo('view-perfil')">Perfil</a></li>
                 </ul>
             </div>
             <div class="footer-col">
