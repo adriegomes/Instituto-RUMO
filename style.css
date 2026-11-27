@@ -62,7 +62,7 @@ body {
     font-size: var(--base-font-size);
     line-height: 1.6;
     color: var(--text-main);
-    background-color: #e6e5e7;
+    background-color: #e7d6f0;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
 }
@@ -1109,8 +1109,8 @@ footer.main-footer {
 }
 
 .icone-card {
-    width: 10rem;
-    height: 6rem;
+    width: 8rem;
+    height: 5rem;
     color: var(--secondary-light);
 
 }
